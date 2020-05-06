@@ -12,7 +12,7 @@ const burger = (props) => {
     })
     .reduce((arr, el) => {
       return arr.concat(el)
-    })
+    }, [])
     if (transformedIngredients.length === 0) {
       transformedIngredients = <p>Please add an ingredient!</p>
     }
@@ -24,7 +24,5 @@ const burger = (props) => {
     </div>
   )
 }
-
-
 
 export default burger
