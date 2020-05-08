@@ -30,8 +30,9 @@ class BurgerIngredient extends Component {
       case 'bacon':
         ingredient = <div className={classes.Bacon}></div>
         break
-      case 'default':
+      default:
         ingredient = null
+        break
     }
     return ingredient
   }
